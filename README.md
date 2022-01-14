@@ -4,5 +4,29 @@
 
 # Requirements:
   <h2>You need before installing using this python script.</h2>
-  1. install python3
-  2. install 
+<ol>
+  <li>Install python3</li>
+  <li>Install datetime</li>
+  <li>Install sockets</li>
+
+  ### this is optional if you don't have.
+  <li>Install sys</li>
+</ol>
+
+# Usage:
+- In windows:
+
+         python porter.py <ip>
+
+- In linux:
+
+         python3 porter.py <ip>
+
+- In mac:
+
+         python3 porter.py <ip>
+
+
+# Developer Bishal Bhandari.
+
+# Thanks to all of you guys.

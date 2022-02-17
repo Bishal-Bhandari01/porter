@@ -16,17 +16,18 @@
 # Usage:
 - In windows:
 
-         python porter.py <ip>
+         python porter.py <ip>/domain
 
 - In linux:
 
-         python3 porter.py <ip>
+         python3 porter.py <ip>/domain
 
 - In mac:
 
-         python3 porter.py <ip>
+         python3 porter.py <ip>/domain
 
 
-# Developer Bishal Bhandari.
+# Developed by Bishal Bhandari.
+    - Wish you happy coding/hacking/Network checking. 
 
 # Thanks to all of you guys.

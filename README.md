@@ -6,7 +6,6 @@
   <h2>You need before installing using this python script.</h2>
 <ol>
   <li>Install python3</li>
-  <li>Install datetime</li>
   <li>Install sockets</li>
 
   ### this is optional if you don't have.

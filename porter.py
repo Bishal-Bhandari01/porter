@@ -13,46 +13,40 @@ else:
 
 try:
     n = int(input(">>> Select Ports to scan (0-65535): "))
-    pro = input(">>> Select protocol (TCP/UDP): ")
-
     print("*"*50)
-    print("\t\tScanning started")
+    print("*\t\tScanning started\t\t *")
     print("*"*50)
 
-    if pro == "tcp" or pro == "TCP":
-        for port in range(n+1):
-            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            socket.setdefaulttimeout(1)
-            result = s.connect_ex((target, port))
+    for port in range(n+1):
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        socket.setdefaulttimeout(1)
+        result = s.connect_ex((target, port))
 
-            if result==0:
-                print(">>> Port {} is open".format(port))
-        
-            s.close()
-            pass
+        if result==0: 
+            print(">>> Port {} is open".format(port))
     
-    if pro=="udp" or pro=="UDP":
-        for port in range(n+1):
-            s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-            socket.setdefaulttimeout(1)
-            result = s.connect_ex((target, port))
-
-            if result==0:
-                print(">>> Port {} is open".format(port))
-
-            s.close()
-            pass
+        s.close()
+        pass
 
 
 except KeyboardInterrupt:
-    print("\n\tExisting Program...")
+    print("\n")
+    print("*"*50)
+    print("*\t\tExisting Program...\t\t *")
+    print("*"*50)
     sys.exit()
 
 except socket.gaierror:
-    print("\n\tHostname couldnot be resolved.")
+    print("*"*50)
+    print("\n\tHostname couldnot be resolved.\t *")
+    print("*"*50)
     sys.exit()
 except socket.error:
-    print("\n\tCouldnot connect to server.")
+    print("*"*50)
+    print("\n\tCouldnot connect to server.\t *")
+    print("*"*50)
     sys.exit()
 
+print("*"*50)
+print("*\t\tScanning Completed\t\t *")
 print("*"*50)
